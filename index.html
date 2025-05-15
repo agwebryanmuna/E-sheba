@@ -25,19 +25,22 @@
   <body>
     <!-- header start -->
 
-    <header id="mainHeader" class="border-black relative h-16">
+    <header
+      id="mainHeader"
+      class="fixed bg-white md:bg-transparent top-0 left-0 w-full h-14 z-50"
+    >
       <div class="wrapper flex items-center justify-between h-full">
         <!-- logo -->
         <a
           href="#"
-          class="font-bold text-4xl sm:text-3xl text-black text-nowrap"
+          class="font-bold text-4xl sm:text-3xl text-gray-800 text-nowrap"
           >E-<span class="text-blue-500">sheba</span></a
         >
 
         <!-- navigation links -->
         <nav
           id="navbar"
-          class="absolute ease-in-out duration-300 bg-white -right-[100%] top-14 sm:top-0 w-full sm:justify-end sm:gap-10 p-5 sm:p-0 flex flex-col gap-4 sm:relative sm:right-0 sm:flex-row sm:ml-auto"
+          class="absolute ease-in-out duration-300 bg-white md:bg-transparent -right-[100%] top-14 sm:top-0 w-full sm:justify-end sm:gap-10 p-5 sm:p-0 flex flex-col gap-4 sm:relative sm:right-0 sm:flex-row sm:ml-auto"
         >
           <ul class="flex flex-col gap-4 md:gap-9 items-center sm:flex-row">
             <li>
@@ -106,6 +109,111 @@
     </header>
 
     <!-- header end -->
+
+    <!-- Hero section start -->
+
+    <section id="hero" class="min-h-[90vh] bg-blue-100 relative">
+      <img
+        class="h-full absolute lg:right-27 lg:bottom-0 lg:z-31"
+        src="./images/doctor.png"
+        alt="Doctor image"
+      />
+      <div
+        class="absolute w-full h-full bg-blue-300 opacity-40 lg:hidden"
+      ></div>
+      <div
+        class="absolute w-[50%] bg-blue-300 rounded-t-full h-[50%] right-0 bottom-10 hidden md:block"
+      ></div>
+
+      <!-- main content -->
+      <div class="w-full h-full absolute z-30 flex flex-col">
+        <!-- Top content with main text -->
+        <div class="wrapper h-full flex items-center">
+          <div class="w-full translate-y-20 lg:translate-y-16 flex-1">
+            <h1
+              class="text-gray-800 font-bold capitalize text-4xl leading-12 text-center sm:text-5xl sm:leading-16 lg:text-left"
+            >
+              Find & search your <br /><span class="text-blue-500 underline"
+                >Favourite</span
+              >
+              doctor
+            </h1>
+            <p class="text-1xl text-center mt-4 sm:mt-8 lg:text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit <br />Sem
+              velit viverra amet faucibus
+            </p>
+
+            <div
+              class="bg-white p-2 rounded-full flex items-center mt-10 sm:max-w-[28.5rem] mx-auto lg:mx-0"
+            >
+              <!-- search doctor -->
+              <div class="flex items-center flex-1 ml-4">
+                <i class="fa-solid fa-user"></i>
+                <input
+                  type="text"
+                  placeholder="Doctor's Name"
+                  class="focus:outline-0 w-full mx-2"
+                />
+              </div>
+              <!-- Location -->
+              <div class="flex items-center flex-1">
+                <i class="fa-solid fa-location-dot"></i>
+                <input
+                  type="text"
+                  placeholder="Location"
+                  class="focus:outline-0 w-full mx-2"
+                />
+              </div>
+              <!-- search icon -->
+              <button class="size-9 bg-blue-500 rounded-full">
+                <i class="fa-solid fa-magnifying-glass text-white"></i>
+              </button>
+            </div>
+          </div>
+          <div class="lg:block lg:flex-1"></div>
+        </div>
+        <!-- bottom content with numbers -->
+        <div class="py-4 bg-blue-500">
+          <div class="wrapper flex">
+            <div class="w-full flex flex-1">
+              <div class="flex-1">
+                <h1
+                  class="text-white text-3xl font-bold text-center tracking-wider lg:text-left"
+                >
+                  24/7
+                </h1>
+                <p
+                  class="text-gray-300 text-[0.75rem] text-center lg:text-left"
+                >
+                  Online Support
+                </p>
+              </div>
+              <div class="flex-1 border-x-2 border-gray-300">
+                <h1
+                  class="text-white text-3xl font-bold text-center tracking-wider"
+                >
+                  1000+
+                </h1>
+                <p class="text-gray-300 text-[0.75rem] text-center">Doctors</p>
+              </div>
+              <div class="flex-1">
+                <h1
+                  class="text-white text-3xl font-bold text-center tracking-wider"
+                >
+                  1M+
+                </h1>
+                <p class="text-gray-300 text-[0.75rem] text-center">
+                  Active Patients
+                </p>
+              </div>
+            </div>
+            <div class="lg:flex-1"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero section end -->
 
     <!-- Swiper -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->

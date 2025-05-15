@@ -13,10 +13,6 @@ body {
   @apply font-poppins text-gray-500 text-base;
 }
 
-.fixed_navbar {
-  @apply fixed top-0 left-0 w-full h-14 shadow-sm;
-}
-
 @layer components {
   .wrapper {
     @apply w-full px-5 bg-transparent md:px-0 sm:mx-auto sm:max-w-full md:max-w-[45rem] lg:max-w-[60rem];
