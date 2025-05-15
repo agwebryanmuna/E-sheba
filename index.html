@@ -9,13 +9,13 @@
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     /> -->
     <!-- font awesome -->
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    /> -->
+    />
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/output.css" />
@@ -23,7 +23,89 @@
     <title>E-sheba</title>
   </head>
   <body>
-    <h1 class="text-4xl">Hello World</h1>
+    <!-- header start -->
+
+    <header id="mainHeader" class="border-black relative h-16">
+      <div class="wrapper flex items-center justify-between h-full">
+        <!-- logo -->
+        <a
+          href="#"
+          class="font-bold text-4xl sm:text-3xl text-black text-nowrap"
+          >E-<span class="text-blue-500">sheba</span></a
+        >
+
+        <!-- navigation links -->
+        <nav
+          id="navbar"
+          class="absolute ease-in-out duration-300 bg-white -right-[100%] top-14 sm:top-0 w-full sm:justify-end sm:gap-10 p-5 sm:p-0 flex flex-col gap-4 sm:relative sm:right-0 sm:flex-row sm:ml-auto"
+        >
+          <ul class="flex flex-col gap-4 md:gap-9 items-center sm:flex-row">
+            <li>
+              <a
+                href="#"
+                class="ease-in duration-100 hover:border-b-2 hover:border-blue-500 hover:text-blue-500"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="ease-in duration-100 hover:border-b-2 hover:border-blue-500 hover:text-blue-500"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="ease-in duration-100 hover:border-b-2 hover:border-blue-500 hover:text-blue-500"
+                >Application</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="ease-in duration-100 hover:border-b-2 hover:border-blue-500 hover:text-blue-500"
+                >History</a
+              >
+            </li>
+          </ul>
+
+          <!-- sign in buttons -->
+          <div class="flex flex-col items-center gap-2 sm:flex-row">
+            <a
+              href="#"
+              class="py-2 px-8 text-nowrap font-semibold rounded-full bg-white border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white sm:px-4 sm:py-1"
+              >Log in</a
+            >
+            <a
+              href="#"
+              class="py-2 px-8 text-nowrap font-semibold rounded-full bg-blue-500 text-white border border-blue-500 hover:bg-white hover:text-blue-500 sm:px-4 sm:py-1"
+              >Sign up</a
+            >
+          </div>
+        </nav>
+
+        <div class="flex gap-4 sm:hidden">
+          <!-- theme icon -->
+          <!-- <button id="dark-theme-button">
+            <i class="text-3xl fa-solid fa-moon"></i>
+          </button>
+          <button id="light-theme-button">
+            <i class="text-3xl fa-solid fa-sun"></i>
+          </button> -->
+
+          <!-- navbar btn -->
+          <div id="menuIcon" class="cursor-pointer">
+            <i class="text-2xl text-gray-800 fa-solid fa-bars"></i>
+          </div>
+          <div id="closeIcon" class="hidden cursor-pointer">
+            <i class="text-2xl text-red-500 fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- header end -->
 
     <!-- Swiper -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
