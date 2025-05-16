@@ -5,12 +5,11 @@
 @theme {
   --font-poppins: "Poppins", sans-serif;
 
-  --text-base: 0.785rem;
   --text-1xl: 1rem;
 }
 
 body {
-  @apply font-poppins text-gray-500 text-base;
+  @apply font-poppins text-gray-500 text-sm;
 }
 
 @layer components {
