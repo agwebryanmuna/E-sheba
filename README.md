@@ -23,8 +23,4 @@ Here's a screenshot of the hero section of the web page
 ## Installation
 
 1. Clone the repository:
-   [```bash
-   git clone https://github.com/agwebryanmuna/GITAM-GCGC.git
-   ```](https://github.com/agwebryanmuna/E-sheba.git)
-
-   ```
+   https://github.com/agwebryanmuna/E-sheba.git
